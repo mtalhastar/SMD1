@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".MainActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="72dp"
+            android:background="@drawable/save" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Registration"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textColor="#434343"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"
+        android:background="@drawable/radius"
+
+        android:padding="16dp"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textColor="#434343"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email"
+        android:background="@drawable/radius"
+
+        android:padding="16dp"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Contact Number"
+        android:textSize="18sp"
+        android:textColor="#434343"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Number"
+        android:background="@drawable/radius"
+        android:padding="16dp"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Country"
+        android:textSize="18sp"
+        android:textColor="#434343"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <EditText
+        android:id="@+id/editContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Country"
+        android:background="@drawable/radius"
+        android:padding="16dp"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="City"
+        android:textSize="18sp"
+        android:textColor="#434343"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <EditText
+        android:id="@+id/Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select City"
+        android:background="@drawable/radius"
+        android:padding="16dp"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/oradius"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Sign up?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#595757"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+
+   </LinearLayout>
+</ScrollView>
