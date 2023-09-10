@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginHorizontal="20dp"
     tools:context=".MainActivity">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="800dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical">
     <View
         android:layout_width="match_parent"
         android:layout_height="20dp" />
@@ -370,71 +376,743 @@
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="Password"
+        android:text="Your Items"
         android:textSize="18sp"
-        android:textColor="#434343"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_weight="1"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="View All"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            />
+    </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="5dp" />
-    <EditText
-        android:id="@+id/editTextPass"
+
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your Password"
-        android:background="@drawable/radius"
-        android:padding="16dp"
-        android:textColorHint="#888888"
-        android:textSize="16sp"
-        android:textColor="#000000"
-        />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Your existing Views here -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview111"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview111"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview121"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview121"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview131"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview131"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="5dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview141"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview141"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
     <View
         android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        android:layout_height="20dp" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Forgot your password?"
-        android:textSize="16sp"
-        android:textAlignment="textEnd"
-        android:textStyle="bold"
-        android:textColor="#FF6737"
-        />
+        android:layout_height="35dp"
+        android:text="Recent Items"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <View
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
-    <Button
+        android:layout_height="5dp" />
+
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/oradius"
-        android:text="Login"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textAllCaps="false"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="bottom|center"
-
-
+        android:layout_height="wrap_content"
         >
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="Sign up?"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#595757"
-            />
-    </LinearLayout>
+            android:orientation="horizontal">
+
+            <!-- Your existing Views here -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview118"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview118"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview128"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview128"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview139"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview139"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="5dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/cardview14"
+                    android:layout_width="220dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/radius"></View>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/whitecircle"
+                    android:layout_alignBottom="@id/cardview14"
+                    android:orientation="horizontal"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Item Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="Location"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#606060"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAlignment="textEnd"
+                            android:text="$10/hr"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="7th Mar"
+                            android:textAlignment="textEnd"
+                            android:textColor="#606060"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
 
 </LinearLayout>
+</ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white"
+      >
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/home"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center|left"
+     />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search"
+
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/plus"
+            android:layout_marginHorizontal="29dp"
+            android:layout_gravity="center"
+
+
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/chat"
+
+            android:layout_gravity="center"
+
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/user"
+            android:layout_marginHorizontal="13dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
