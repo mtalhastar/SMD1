@@ -11,15 +11,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".ItemsScreen"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".messagescreen"
+            android:exported="false" />
+        <activity
+            android:name=".chatScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResultScreen"
+            android:exported="false"
+            android:label="@string/title_activity_search_result_screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".PracticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayScreen"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ItemsScreen" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
-         <activity
-         android:name=".SignUp"
-         android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />

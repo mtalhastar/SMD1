@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src='@drawable/icondone'
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <!-- Email Verification TextField -->
+        <TextView
+            android:id="@+id/emailVerificationEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search Results"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15px"
+            android:layout_marginLeft="15px"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1200dp"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Some Item"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Best Match"
+                    android:background="@drawable/radius"
+                    android:padding="16dp"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Your existing Views here -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <View
+                            android:id="@+id/cardview"
+                            android:layout_width="200dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/radius"></View>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview"
+                            android:orientation="horizontal"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="Item Name"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
+                                    android:textColor="#606060"
+                                    android:layout_marginLeft="10dp"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:textAlignment="textEnd"
+                                    android:text="$10/hr"
+                                    android:textColor="@color/orange"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="7th Mar"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="20dp" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <View
+                            android:id="@+id/cardview200"
+                            android:layout_width="200dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/radius"></View>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview200"
+                            android:orientation="horizontal"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="Item Name"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
+                                    android:textColor="#606060"
+                                    android:layout_marginLeft="10dp"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:textAlignment="textEnd"
+                                    android:text="$10/hr"
+                                    android:textColor="@color/orange"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="7th Mar"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Your existing Views here -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <View
+                        android:id="@+id/cardview230"
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/radius"></View>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/whitecircle"
+                        android:layout_alignBottom="@id/cardview230"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Item Name"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Location"
+                                android:textSize="16sp"
+                                android:layout_weight="1"
+                                android:textColor="#606060"
+                                android:layout_marginLeft="10dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:textAlignment="textEnd"
+                                android:text="$10/hr"
+                                android:textColor="@color/orange"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:text="7th Mar"
+                                android:textAlignment="textEnd"
+                                android:textColor="#606060"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <View
+                        android:id="@+id/cardview240"
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/radius"></View>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/whitecircle"
+                        android:layout_alignBottom="@id/cardview240"
+                        android:orientation="horizontal"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Item Name"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Location"
+                                android:textSize="16sp"
+                                android:layout_weight="1"
+                                android:textColor="#606060"
+                                android:layout_marginLeft="10dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:textAlignment="textEnd"
+                                android:text="$10/hr"
+                                android:textColor="@color/orange"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:text="7th Mar"
+                                android:textAlignment="textEnd"
+                                android:textColor="#606060"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Your existing Views here -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <View
+                        android:id="@+id/cardview230"
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/radius"></View>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/whitecircle"
+                        android:layout_alignBottom="@id/cardview230"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Item Name"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Location"
+                                android:textSize="16sp"
+                                android:layout_weight="1"
+                                android:textColor="#606060"
+                                android:layout_marginLeft="10dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:textAlignment="textEnd"
+                                android:text="$10/hr"
+                                android:textColor="@color/orange"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:text="7th Mar"
+                                android:textAlignment="textEnd"
+                                android:textColor="#606060"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="20dp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <View
+                        android:id="@+id/cardview240"
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:background="@drawable/radius"></View>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/whitecircle"
+                        android:layout_alignBottom="@id/cardview240"
+                        android:orientation="horizontal"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Item Name"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Location"
+                                android:textSize="16sp"
+                                android:layout_weight="1"
+                                android:textColor="#606060"
+                                android:layout_marginLeft="10dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:textAlignment="textEnd"
+                                android:text="$10/hr"
+                                android:textColor="@color/orange"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:text="7th Mar"
+                                android:textAlignment="textEnd"
+                                android:textColor="#606060"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
