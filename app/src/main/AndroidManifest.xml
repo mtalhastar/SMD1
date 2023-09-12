@@ -42,9 +42,10 @@
             android:exported="false" />
         <activity
             android:name=".DisplayScreen"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".ItemsScreen" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false" />
+         <activity
+         android:name=".ItemsScreen"
+         android:exported="false" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
@@ -55,7 +56,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".ItemsScreen"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

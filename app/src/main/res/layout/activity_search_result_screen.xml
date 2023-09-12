@@ -259,7 +259,7 @@
                     android:layout_weight="1"
                     >
                     <View
-                        android:id="@+id/cardview230"
+                        android:id="@+id/cardview240"
                         android:layout_width="200dp"
                         android:layout_height="160dp"
                         android:background="@drawable/radius"></View>
@@ -268,7 +268,7 @@
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:background="@drawable/whitecircle"
-                        android:layout_alignBottom="@id/cardview230"
+                        android:layout_alignBottom="@id/cardview240"
                         android:orientation="horizontal"
                         >
                         <LinearLayout
@@ -336,7 +336,7 @@
                     android:layout_weight="1"
                     >
                     <View
-                        android:id="@+id/cardview240"
+                        android:id="@+id/cardview300"
                         android:layout_width="200dp"
                         android:layout_height="160dp"
                         android:background="@drawable/radius"></View>
@@ -345,7 +345,7 @@
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:background="@drawable/whitecircle"
-                        android:layout_alignBottom="@id/cardview240"
+                        android:layout_alignBottom="@id/cardview300"
                         android:orientation="horizontal"
 
                         >
@@ -500,7 +500,7 @@
                     android:layout_weight="1"
                     >
                     <View
-                        android:id="@+id/cardview240"
+                        android:id="@+id/cardview500"
                         android:layout_width="200dp"
                         android:layout_height="160dp"
                         android:background="@drawable/radius"></View>
@@ -509,7 +509,7 @@
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:background="@drawable/whitecircle"
-                        android:layout_alignBottom="@id/cardview240"
+                        android:layout_alignBottom="@id/cardview500"
                         android:orientation="horizontal"
 
                         >
