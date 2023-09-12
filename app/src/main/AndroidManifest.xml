@@ -12,6 +12,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".CameraScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".ItemIScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ItemNav"
+            android:exported="false" />
+        <activity
+            android:name=".Profilescreen"
+            android:exported="false" />
+        <activity
             android:name=".splashscreen"
             android:exported="false" />
         <activity
@@ -43,9 +55,9 @@
         <activity
             android:name=".DisplayScreen"
             android:exported="false" />
-         <activity
-         android:name=".ItemsScreen"
-         android:exported="false" />
+        <activity
+            android:name=".ItemsScreen"
+            android:exported="false" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />

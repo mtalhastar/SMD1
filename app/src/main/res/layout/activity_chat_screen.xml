@@ -48,6 +48,7 @@
                     android:background="@drawable/circle">
                 </ImageView>
                 <LinearLayout
+                    android:id="@+id/mike"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"

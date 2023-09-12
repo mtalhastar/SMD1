@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src='@drawable/icondone'
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    />
+                <!-- Email Verification TextField -->
+                <TextView
+                    android:id="@+id/emailVerificationEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Item"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="15px"
+                    />
+                <TextView
+                    android:id="@+id/report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report"
+                    android:textColor="#EF8305"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginLeft="15px"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/uimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/img"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        ></ImageView>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"></View>
+                    <ImageView
+                        android:id="@+id/uvideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_1"
+                        android:layout_marginTop="6dp"></ImageView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:textColor="#434343"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Name"
+                    android:background="@drawable/radius"
+
+                    android:padding="16dp"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Email"
+                    android:textSize="18sp"
+                    android:textColor="#434343"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Email"
+                    android:background="@drawable/radius"
+
+                    android:padding="16dp"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Contact Number"
+                    android:textSize="18sp"
+                    android:textColor="#434343"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Contact Number"
+                    android:background="@drawable/radius"
+                    android:padding="16dp"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="City"
+                    android:textSize="18sp"
+                    android:textColor="#434343"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Islamabad"
+                    android:background="@drawable/radius"
+                    android:padding="16dp"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/postitem"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/oradius"
+        android:text="Post Item"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+
+        />
+
+
+</RelativeLayout>

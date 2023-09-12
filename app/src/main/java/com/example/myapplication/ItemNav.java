@@ -5,24 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
-public class DisplayScreen extends AppCompatActivity {
+public class ItemNav extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_screen);
-        ImageView text3= findViewById(R.id.searching);
-//        spotit
-//        loginin
-
+        setContentView(R.layout.activity_item_nav);
+        Button text3= findViewById(R.id.rentit);
 
         text3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DisplayScreen.this, SearchResultScreen.class);
+                Intent intent = new Intent(ItemNav.this, ItemIScreen.class);
                 startActivity(intent);
             }
         });

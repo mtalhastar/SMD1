@@ -6,54 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
+            android:layout_height="1200dp"
 
+            android:orientation="vertical">
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:text="Welcome,"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Profile"
                     android:textColor="@color/black"
                     android:textSize="23sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:text="Daud"
-                    android:textColor="#FE6737"
-                    android:textSize="23sp"
-                    android:textStyle="bold" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editicon"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
             </LinearLayout>
 
             <View
+                android:id="@+id/viewid"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#EBEAEA"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp">
+                ">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Daud"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Islamabad"
+                        android:textSize="17sp"
+                        android:textColor="#777777"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="18 items posted"
+                        android:textSize="17sp"
+
+                        android:textColor="#7A7A7A"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="24 items rented"
+                        android:textSize="17sp"
+
+                        android:textColor="#878787"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
                 android:layout_width="match_parent"
                 android:layout_height="25dp" />
-
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="Featured Items"
-                android:textColor="@color/black"
+                android:text="Items Rented"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
 
             <View
                 android:layout_width="match_parent"
@@ -61,8 +120,9 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -72,7 +132,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview"
                             android:layout_width="220dp"
@@ -82,52 +141,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -143,7 +202,6 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="20dp"
                         android:layout_height="5dp" />
@@ -151,7 +209,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview1"
                             android:layout_width="220dp"
@@ -161,52 +218,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview1"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview1"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -216,7 +273,8 @@
                                     android:text="7th Mar"
                                     android:textAlignment="textEnd"
                                     android:textColor="#606060"
-                                    android:textSize="14sp" />
+                                    android:textSize="14sp"
+                                    />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -230,7 +288,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview3"
                             android:layout_width="220dp"
@@ -240,52 +297,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview3"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview3"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -301,15 +358,12 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="20dp"
                         android:layout_height="5dp" />
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview2"
                             android:layout_width="220dp"
@@ -319,52 +373,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview2"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview2"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -390,23 +444,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_weight="1"
                     android:text="Your Items"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:text="View All"
-                    android:textColor="@color/orange"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
             </LinearLayout>
 
             <View
@@ -415,8 +463,9 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -426,7 +475,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview111"
                             android:layout_width="220dp"
@@ -436,52 +484,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview111"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview111"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -497,7 +545,6 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="20dp"
                         android:layout_height="5dp" />
@@ -505,7 +552,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview121"
                             android:layout_width="220dp"
@@ -515,52 +561,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview121"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview121"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -584,7 +630,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview131"
                             android:layout_width="220dp"
@@ -594,52 +639,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview131"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview131"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -655,11 +700,9 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="20dp"
                         android:layout_height="5dp" />
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
@@ -673,52 +716,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview141"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview141"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -736,7 +779,6 @@
                     </RelativeLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
@@ -755,8 +797,8 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -766,7 +808,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview118"
                             android:layout_width="220dp"
@@ -776,51 +817,50 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview118"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview118"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
+                                    android:layout_weight="1"
 
                                     />
 
@@ -838,7 +878,6 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="20dp"
                         android:layout_height="5dp" />
@@ -846,7 +885,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview128"
                             android:layout_width="220dp"
@@ -856,34 +894,32 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview128"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview128"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
-                                    android:textColor="#606060"
                                     android:textSize="16sp"
+                                    android:layout_weight="1"
+                                    android:textColor="#606060"
 
                                     />
                             </LinearLayout>
@@ -891,18 +927,19 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -926,7 +963,6 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview139"
                             android:layout_width="220dp"
@@ -936,52 +972,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview139"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview139"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -997,15 +1033,12 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="20dp"
                         android:layout_height="5dp" />
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
                         <View
                             android:id="@+id/cardview14"
                             android:layout_width="220dp"
@@ -1015,52 +1048,52 @@
                         <LinearLayout
                             android:layout_width="220dp"
                             android:layout_height="50dp"
-                            android:layout_alignBottom="@id/cardview14"
                             android:background="@drawable/whitecircle"
+                            android:layout_alignBottom="@id/cardview14"
                             android:orientation="horizontal"
 
                             >
-
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical">
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Item Name"
-                                    android:textColor="@color/black"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
-
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_weight="1"
                                     android:text="Location"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
                                     android:textColor="#606060"
-                                    android:textSize="16sp" />
+                                    android:layout_marginLeft="10dp"
+                                    />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
+                                android:orientation="vertical"
+                                >
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
-                                    android:layout_marginRight="10dp"
-                                    android:layout_weight="1"
-                                    android:text="$10/hr"
                                     android:textAlignment="textEnd"
+                                    android:text="$10/hr"
                                     android:textColor="@color/orange"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="10dp"
+                                    />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -1079,12 +1112,12 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="200dp"></View>
+
 
         </LinearLayout>
+        </LinearLayout>
     </ScrollView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -1092,22 +1125,20 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:background="@color/white"
-      >
-    <TextView
-        android:id="@+id/home"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/homen"
-        android:layout_marginLeft="20dp"
-        android:layout_gravity="center"
-     />
+        >
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/homeblack"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            />
         <View
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             />
         <TextView
-            android:id="@+id/search"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/search"
@@ -1116,7 +1147,6 @@
             />
 
         <TextView
-             android:id="@+id/plusb"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/plus"
@@ -1126,10 +1156,10 @@
 
             />
         <TextView
-            android:id="@+id/chat"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/chat"
+
             android:layout_gravity="center"
 
             />
@@ -1139,13 +1169,21 @@
             android:layout_weight="1"
             />
         <TextView
-            android:id="@+id/profile"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/user"
+            android:background="@drawable/userorange"
             android:layout_marginHorizontal="13dp"
             android:layout_gravity="center"
             />
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="95dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/avatar">
+
+    </ImageView>
 </RelativeLayout>
