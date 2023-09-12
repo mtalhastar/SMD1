@@ -12,6 +12,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".splashscreen"
+            android:exported="false" />
+        <activity
+            android:name=".videoscreen2"
+            android:exported="false" />
+        <activity
+            android:name=".videoscreen"
+            android:exported="false" />
+        <activity
             android:name=".report"
             android:exported="false" />
         <activity

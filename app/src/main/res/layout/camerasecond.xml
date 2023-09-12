@@ -105,9 +105,10 @@
                 android:layout_height="wrap_content"
                 android:text="Photo"
                 android:layout_gravity="center"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="2dp"
                 android:background="@drawable/oradius"
                 android:textSize="18dp"
+                android:textColor="@color/white"
                 android:paddingHorizontal="10dp"
                 />
             <View
